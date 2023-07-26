@@ -12,6 +12,6 @@
 export default defineEventHandler((event) => {
     const headers = event.req.headers;
     if (headers.referer && /facebook\.com|twitter\.com|t\.co/gi.test(headers.referer)) {
-        sendRedirect(event,"https://mila1news.wiki"+event.req.url);
+        sendRedirect(event,"https://life.igyo.info"+event.req.url);
     }
 })
